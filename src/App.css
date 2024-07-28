@@ -1,0 +1,110 @@
+.main {
+  max-height: 420px;
+  width: 390px;
+  background: black;
+  padding: 12px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.main__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+}
+
+.main__header p {
+  color: #29A354;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main__header img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.main__title {
+  font-size: 24px;
+  font-weight: 800;
+  width: 100%;;
+  line-height: 26.4px;
+  color: white;
+  text-align: left;
+  align-self: flex-start;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.timer-display {
+  font-size: 3rem;
+  z-index: 1;
+}
+
+.circle-animation {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid lightgrey;
+  border-top-color:#29A354 ;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.btn__row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.btn {
+  width: 161px;
+  height: 44px;
+  color: white;
+  border-radius: 32px;
+  outline: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.btn-yellow {
+  background-color: rgb(192, 126, 4);
+}
+
+.btn-gray {
+  background-color: rgb(71, 71, 71);
+}

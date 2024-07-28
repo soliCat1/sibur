@@ -1,0 +1,51 @@
+.time-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .picker-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .picker-wrapper {
+    height: 120px;
+    overflow-y: scroll;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 80px;
+    cursor: grab;
+  }
+  
+  .picker-wrapper:active {
+    cursor: grabbing;
+  }
+  
+  .picker-item {
+    height: 40px;
+    line-height: 40px;
+    font-size: 2rem;
+  }
+  
+  .picker-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .colon {
+    font-size: 2rem;
+  }
+  
+  .set-time-button {
+    margin-top: 20px;
+    width: 206px;
+    height: 56px;
+    border-radius: 32px;
+    background: #29A354;
+    color: white;
+    outline: none;
+    border-color: transparent;
+  }
